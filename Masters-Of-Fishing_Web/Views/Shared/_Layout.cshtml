@@ -5,11 +5,14 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Masters of Fishing - @ViewBag.Title</title>
 	<link href="~/Content/CSS/HomeStyleSheet.css" rel="stylesheet" />
+	<link href="~/Content/Plugin/css/bootstrap.min.css" rel="stylesheet" />
 	@RenderSection("head", required: false)
 </head>
 <body>
     <main id="Body">
-        @RenderBody()
+		<section id="body">
+				@RenderBody()
+		</section>
     </main>
 </body>
 </html>

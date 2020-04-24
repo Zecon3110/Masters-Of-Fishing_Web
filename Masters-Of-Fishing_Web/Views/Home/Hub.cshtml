@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Hub";
+}
+
+<div id="hubBody">
+	<div class="row">
+		<div class="col-md-5">
+			<div id="hubPlaces">
+				<h3>@ViewBag.Title</h3>
+				<p>Where will you go to?</p>
+				<table>
+					<tr>
+						<td>
+							<a href="/Home/River"><input type="button" value="The River" /></a>
+							<a href="/Home/Lake"><input type="button" value="The Lake" /></a>
+							<a href="/Home/Coast"><input type="button" value="The Coast" /></a>
+							<a href="/Home/Ocean"><input type="button" value="The Sea" /></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div id="Image">
+				<img src="~/Content/IMG/Harbour.jpg" alt="HubHarbour" class="img-fluid"/>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<a href="/Home/Index" class="menuButton">< Back to Menu</a>
+	<a href="" class="endButton">End Game ></a>
+</div>
+

@@ -15,7 +15,43 @@
 	min-height: 720px;
 	margin: 5em auto;
 	padding: 1em;
-	border: 1px solid #000;
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+#body .menuButton {
+	
+}
+
+#footer {
+	
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+
+#footer .endButton {
+	float: right;
+}
+
+#hubBody input, #fishBody input {
+	display: block;
+	width: 150px;
+	border-radius: 0.5em;
+	color: #fff;
+	background-color: #2B65EC;
+	margin-bottom: 0.25em;
+	padding: 0.5em;
+	border: hidden;
+}
+
+#hubBody input:hover, #fishBody input:hover {
+	background-color: #1751D8;
+	cursor: pointer;
+}
+
+#hubBody a:hover, #fishBody a:hover {
+	text-decoration: none;
 }
 /*#endregion*/
 
@@ -37,13 +73,11 @@
 	max-width: 360px;
 	min-height: 50px;
 	margin: 0 auto;
-	border: 1px solid hotpink;
 }
 
 #startUpButtons {
 	max-width: 360px;
 	margin: 5em auto;
-	border: 1px solid green;
 }
 
 #startUpButtons table {
@@ -53,9 +87,10 @@
 
 #startUpButtons input {
 	width: 15em;
+	margin-bottom: 0.25em; 
 	padding: 1em;
 	color: #fff;
-	background-color: grey;
+	background-color: #2B65EC;
 	text-transform: uppercase;
 	font-weight: bold;
 	border: hidden;
@@ -63,6 +98,32 @@
 }
 
 #startUpButtons input:hover {
-	background-color: dimgray;
+	background-color: #1751D8;
+	cursor: pointer;
+}
+/*#endregion*/
+
+/*#region Hub*/
+#hubBody, #fishBody, #settings {
+	min-height: 720px;
+	padding: 0 1em;
+	margin-bottom: 0.25em;
+	border: 1px solid #000;
+}
+
+#hubBody .col-md-5, #fishBody .col-md-5 {
+	padding-right: 0;
+}
+
+#hubBody .col-md-7, #fishBody .col-md-7 {
+	padding: 0;
+}
+
+#hubPlaces {
+	min-height: 200px;
+}
+
+#Image {
+	min-height: 200px;
 }
 /*#endregion*/
