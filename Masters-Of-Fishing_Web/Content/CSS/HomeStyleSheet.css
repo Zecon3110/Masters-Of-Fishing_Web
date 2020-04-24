@@ -12,7 +12,7 @@
 
 #body {
 	max-width: 720px;
-	min-height: 720px;
+	min-height: 360px;
 	margin: 5em auto;
 	padding: 1em;
 	background-color: rgba(128, 128, 128, 0.25);
@@ -105,8 +105,9 @@
 
 /*#region Hub*/
 #hubBody, #fishBody, #settings {
-	min-height: 720px;
-	padding: 0 1em;
+	min-height: 360px;
+	max-height: 720px;
+	padding: 0.5em 1em;
 	margin-bottom: 0.25em;
 	border: 1px solid #000;
 }
@@ -125,5 +126,33 @@
 
 #Image {
 	min-height: 200px;
+}
+/*#endregion*/
+
+/*#region Settings*/
+#settings .CMSTable {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	border: 1px solid gray;
+}
+
+#settings th {
+	padding: 5px;
+	background-color: lightgray;
+}
+
+#settings tr {
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+.CMSTable tr > td:nth-child(1) {
+	width: 12.5%;
+	padding-left: 5px;
+}
+
+#settings a:hover {
+	text-decoration: none;
 }
 /*#endregion*/

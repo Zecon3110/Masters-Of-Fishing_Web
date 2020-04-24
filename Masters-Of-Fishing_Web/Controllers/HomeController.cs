@@ -50,5 +50,10 @@ namespace Masters_Of_Fishing_Web.Controllers
 			return View();
 		}
 		#endregion
+
+		public ActionResult Caught()
+		{
+			return View();
+		}
 	}
 }

@@ -1,0 +1,115 @@
+﻿body {
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+/*#region Global*/
+#Body {
+	min-height: 720px;
+}
+
+#body {
+	max-width: 720px;
+	min-height: 360px;
+	max-height: 720px;
+	margin: 5em auto;
+	padding: 1em;
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+#category {
+	min-height: 360px;
+	padding: 0.5em 1em;
+	margin-bottom: 0.25em;
+	border: 1px solid #000;
+}
+
+#category a:hover {
+	text-decoration: none;
+}
+
+#footer {
+
+}
+
+#footer a:hover {
+	text-decoration: none;
+}
+/*#endregion*/
+
+/*#region Categories*/
+#category {
+
+}
+
+#category p {
+	margin-bottom: 0.5em;
+}
+
+#category .addButton {
+	color: #fff;
+	padding: 5px;
+	float: right;
+	background-color: #007bff;
+}
+
+#category .addButton:hover {
+	background-color: #0056b3;
+}
+
+#category .CMSTable {
+	width: 100%;
+	height: auto;
+	margin: 0.5em auto;
+	border: 1px solid gray;
+}
+
+#category th {
+	padding: 5px;
+	background-color: lightgray;
+}
+
+#category tr {
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+#category tr > td:nth-child(1) {
+	width: 12.5%;
+	padding-left: 5px;
+}
+
+#category tr > td:nth-child(2), tr > td:nth-child(3) {
+	width: auto;
+}
+/*#endregion*/
+
+/*#region Edit*/
+#category label {
+	width: 100%;
+	font-weight: bold;
+	padding: 5px;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	background-color: lightgray !important;
+}
+
+#category input {
+	padding: 5px;
+	width: 100%;
+	border-radius: 0 !important;
+}
+
+#category .btn {
+	width: 100px !important;
+	margin-top: 7.5px;
+}
+
+#category .btn-outline-info {
+	width: 150px !important;
+	border-radius: 0 !important;
+	margin-top: 5px;
+}
+/*#endregion*/
