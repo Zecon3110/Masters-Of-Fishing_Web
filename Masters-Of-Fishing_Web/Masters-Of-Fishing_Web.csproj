@@ -88,16 +88,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Settings\Content\CSS\main-css.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-grid.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-grid.min.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-reboot.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-reboot.min.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap.css" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap.min.css" />
+    <Content Include="Content\IMG\Coast.jpg" />
+    <Content Include="Content\IMG\Harbour.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CSS\HomeStyleSheet.css" />
+    <Content Include="Content\IMG\Lake.jpg" />
+    <Content Include="Content\IMG\Ocean.jpg" />
+    <Content Include="Content\IMG\River.jpg" />
+    <Content Include="Content\Plugin\css\bootstrap-grid.css" />
+    <Content Include="Content\Plugin\css\bootstrap-grid.min.css" />
+    <Content Include="Content\Plugin\css\bootstrap-reboot.css" />
+    <Content Include="Content\Plugin\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\Plugin\css\bootstrap.css" />
+    <Content Include="Content\Plugin\css\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Plugin\css\.DS_Store" />
+    <Content Include="Content\Plugin\css\bootstrap-grid.css.map" />
+    <Content Include="Content\Plugin\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\Plugin\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\Plugin\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\Plugin\css\bootstrap.css.map" />
+    <Content Include="Content\Plugin\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Settings\Views\web.config" />
+    <Content Include="Areas\Settings\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Settings\Views\Setting\River.cshtml" />
+    <Content Include="Areas\Settings\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Settings\Content\Plugin\css\.DS_Store" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-grid.css.map" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-grid.min.css.map" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-reboot.css.map" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap.css.map" />
+    <Content Include="Areas\Settings\Content\Plugin\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Settings\Views\Setting\EditFish.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -107,6 +144,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Settings\Controllers\SettingController.cs" />
+    <Compile Include="Areas\Settings\SettingsAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -122,6 +161,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Hub.cshtml" />
+    <Content Include="Views\Home\Settings.cshtml" />
+    <Content Include="Views\Home\River.cshtml" />
+    <Content Include="Views\Home\Lake.cshtml" />
+    <Content Include="Views\Home\Coast.cshtml" />
+    <Content Include="Views\Home\Ocean.cshtml" />
+    <Content Include="Views\Home\Caught.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -131,7 +177,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\IMG\" />
+    <Folder Include="Areas\Settings\Models\" />
+    <Folder Include="Factories\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
