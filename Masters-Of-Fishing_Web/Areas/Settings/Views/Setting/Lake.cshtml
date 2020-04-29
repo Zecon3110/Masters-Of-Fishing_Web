@@ -1,6 +1,6 @@
-﻿@model List<Masters_Of_Fishing_Web.Models.River>
+﻿@model List<Masters_Of_Fishing_Web.Models.Lake>
 @{
-    ViewBag.Title = "River";
+	ViewBag.Title = "Lake";
 }
 
 <div id="category">
@@ -10,7 +10,7 @@
 			<p>Add, edit or delete a fish from this category</p>
 		</div>
 		<div class="col-md-12">
-			<a href="/Settings/Setting/AddRiverFish" class="addButton">Add Fish</a>
+			<a href="/Settings/Setting/AddLakeFish" class="addButton">Add Fish</a>
 		</div>
 		<div class="col-md-12">
 			<table class="CMSTable">
@@ -19,14 +19,14 @@
 					<th>Name</th>
 					<th>Action</th>
 				</tr>
-				@foreach (Masters_Of_Fishing_Web.Models.River item in Model)
+				@foreach (Masters_Of_Fishing_Web.Models.Lake item in Model)
 				{
 					<tr>
 						<td>@item.ID</td>
 						<td>@item.Name</td>
 						<td>
-							<a href="/Settings/Setting/EditRiverFish/@item.ID"><i class="fas fa-pen"></i></a>
-							<a href="/Settings/Setting/DeleteRiverFish/@item.ID" onclick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
+							<a href="/Settings/Setting/EditLakeFish/@item.ID"><i class="fas fa-pen"></i></a>
+							<a href="/Settings/Setting/DeleteLakeFish/@item.ID" onclick="return confirm('Are you sure?')"><i class="fas fa-trash"></i></a>
 						</td>
 					</tr>
 				}

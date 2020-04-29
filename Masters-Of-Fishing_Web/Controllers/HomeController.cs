@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Masters_Of_Fishing_Web.Models;
+using Masters_Of_Fishing_Web.Factories;
 
 namespace Masters_Of_Fishing_Web.Controllers
 {
     public class HomeController : Controller
     {
+		DBContext context = new DBContext();
         // GET: Home
         public ActionResult Index()
         {
