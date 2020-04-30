@@ -176,10 +176,10 @@ public class AutoFactory<T>
             sqlQuery = string.Format("INSERT INTO [{0}] DEFAULT VALUES", typeof(T).Name);
         }
 
-        sqlQuery += "; SELECT LAST_INSERT_ROWID();";
+		sqlQuery += "; SELECT LAST_INSERT_ROWID();";
 
-        // We open a connection with the current connectionstring
-        SQLiteConnection connection = new SQLiteConnection(connectionString);
+		// We open a connection with the current connectionstring
+		SQLiteConnection connection = new SQLiteConnection(connectionString);
         connection.Open();
 
         // Generating the Sql Command to run on the database

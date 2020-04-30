@@ -38,7 +38,7 @@ namespace Masters_Of_Fishing_Web.Areas.Settings.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult EditRiverFish(Coast coast)
+		public ActionResult EditCoastFish(Coast coast)
 		{
 			context.CoastFactory.Update(coast);
 			return RedirectToAction("Coast");
@@ -157,7 +157,6 @@ namespace Masters_Of_Fishing_Web.Areas.Settings.Controllers
 		[HttpPost]
 		public ActionResult EditRiverFish(River river)
 		{
-			TempData["SYS_MSG"] = "Changes to this fish has been updated";
 			context.RiverFactory.Update(river);
 			return RedirectToAction("River");
 		}
