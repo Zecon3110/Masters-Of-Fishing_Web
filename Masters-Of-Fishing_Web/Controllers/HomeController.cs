@@ -54,9 +54,10 @@ namespace Masters_Of_Fishing_Web.Controllers
 		}
 		#endregion
 
-		public ActionResult Caught()
+		public ActionResult Caught(int id = 0)
 		{
-			return View();
+			River river = context.RiverFactory.Get(id);
+			return View(river);
 		}
 	}
 }

@@ -8,15 +8,18 @@
 		<div class="col-md-5">
 			<div id="">
 				<h3>@ViewBag.Title a Fish</h3>
-				<p>You caught @(Model?.Name)!</p>
+				<p>You caught a Fish!</p>
+				<p><strong>Name</strong>: @(Model?.Name)</p>
+				<p><strong>Weight</strong>: @Model.Weight kg</p>
+				<p><strong>Length</strong>: @Model.Length m</p>
 				<p>What will you do now?</p>
-				<a href="/Home/Caught/@(Model?.ID)"><input type="button" value="Fish More" /></a>
+				<p id="demo"></p>
 				<a href="/Home/Hub"><input type="button" value="Head Back" /></a>
 			</div>
 		</div>
 		<div class="col-md-7">
 			<div id="Image">
-				
+				<img src="~/Content/IMG/Caught.jpg" class="img-fluid"/>
 			</div>
 		</div>
 	</div>
