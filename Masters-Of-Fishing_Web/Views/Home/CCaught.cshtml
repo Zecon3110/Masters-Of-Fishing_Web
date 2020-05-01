@@ -1,6 +1,10 @@
-﻿@model River
+﻿@model Coast
 @{
-    ViewBag.Title = "Caught";
+	ViewBag.Title = "Caught";
+
+	Random rnd = new Random();
+	int id = Convert.ToInt32(Model.ID);
+	int randomNumber = rnd.Next(id, 10);
 }
 
 <div id="fishBody">
@@ -13,15 +17,14 @@
 				<p><strong>Weight</strong>: @Model.Weight kg</p>
 				<p><strong>Length</strong>: @Model.Length m</p>
 				<p>What will you do now?</p>
-				<p id="demo"></p>
+				<a href="/Home/CCaught/@randomNumber"><input type="button" value="Fish" /></a>
 				<a href="/Home/Hub"><input type="button" value="Head Back" /></a>
 			</div>
 		</div>
 		<div class="col-md-7">
 			<div id="Image">
-				<img src="~/Content/IMG/Caught.jpg" class="img-fluid"/>
+				<img src="~/Content/IMG/Caught.jpg" class="img-fluid" />
 			</div>
 		</div>
 	</div>
 </div>
-

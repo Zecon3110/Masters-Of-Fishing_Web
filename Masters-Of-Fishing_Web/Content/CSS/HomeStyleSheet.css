@@ -50,12 +50,17 @@
 	cursor: pointer;
 }
 
-#hubBody a:hover, #fishBody a:hover {
+#hubBody a:hover, #fishBody a:hover, #endBody a:hover {
 	text-decoration: none;
 }
 
-#demo {
-	margin: 0 !important;
+#endBody div:nth-child(1) {
+	max-width: 375px;
+	margin: 0 auto;
+}
+
+#endBody h3, #endBody p {
+	text-align: center;
 }
 /*#endregion*/
 
@@ -108,7 +113,7 @@
 /*#endregion*/
 
 /*#region Hub*/
-#hubBody, #fishBody, #settings {
+#hubBody, #fishBody, #settings, #endBody {
 	min-height: 360px;
 	max-height: 720px;
 	padding: 0.5em 1em;

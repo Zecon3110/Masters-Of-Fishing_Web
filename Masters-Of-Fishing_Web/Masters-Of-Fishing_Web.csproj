@@ -192,7 +192,11 @@
     <Content Include="Views\Home\Lake.cshtml" />
     <Content Include="Views\Home\Coast.cshtml" />
     <Content Include="Views\Home\Ocean.cshtml" />
-    <Content Include="Views\Home\Caught.cshtml" />
+    <Content Include="Views\Home\RCaught.cshtml" />
+    <Content Include="Views\Home\CCaught.cshtml" />
+    <Content Include="Views\Home\LCaught.cshtml" />
+    <Content Include="Views\Home\OCaught.cshtml" />
+    <Content Include="Views\Home\End.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
