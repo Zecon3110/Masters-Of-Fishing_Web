@@ -1,6 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "Coast";
+	ViewBag.Title = "Coast";
+
+	Random rnd = new Random();
+	int randomNumber = rnd.Next(1, 5);
 }
 
 <div id="fishBody">
@@ -9,8 +12,8 @@
 			<div id="">
 				<h3>The @ViewBag.Title</h3>
 				<p>What will you do here?</p>
-				<a href="/Home/Caught"><input type="button" value="Fish" /></a>
-				<a href="javascript:void(0);" onclick="history.go(-1);"><input type="button" value="Head Back" /></a>
+				<a href="/Home/CCaught/@randomNumber"><input type="button" value="Fish" /></a>
+				<a href="/Home/Hub"><input type="button" value="Head Back" /></a>
 			</div>
 		</div>
 		<div class="col-md-7">

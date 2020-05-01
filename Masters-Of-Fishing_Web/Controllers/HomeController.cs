@@ -11,8 +11,9 @@ namespace Masters_Of_Fishing_Web.Controllers
     public class HomeController : Controller
     {
 		DBContext context = new DBContext();
-        // GET: Home
-        public ActionResult Index()
+		// GET: Home
+		#region Main
+		public ActionResult Index()
         {
             return View();
         }
@@ -31,6 +32,7 @@ namespace Masters_Of_Fishing_Web.Controllers
 		{
 			return View();
 		}
+		#endregion
 
 		#region Places
 		public ActionResult River()
@@ -54,10 +56,30 @@ namespace Masters_Of_Fishing_Web.Controllers
 		}
 		#endregion
 
-		public ActionResult Caught(int id = 0)
+		#region Catches
+		public ActionResult CCaught(int id = 0)
+		{
+			Coast coast = context.CoastFactory.Get(id);
+			return View(coast);
+		}
+
+		public ActionResult LCaught(int id = 0)
+		{
+			Lake lake = context.LakeFactory.Get(id);
+			return View(lake);
+		}
+
+		public ActionResult OCaught(int id = 0)
+		{
+			Ocean ocean = context.OceanFactory.Get(id);
+			return View(ocean);
+		}
+
+		public ActionResult RCaught(int id = 0)
 		{
 			River river = context.RiverFactory.Get(id);
 			return View(river);
 		}
+		#endregion
 	}
 }
